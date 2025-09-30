@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Equipos</title>
+    </head>
+    <body>
+        <h1>Lista de equipos</h1>
+        <ul>
+            {% for equipo in lista_de_equipos %}
+                <li><strong>Nombre:</strong> {{ equipo.nombre }} <strong>- Ciudad:</strong> {{ equipo.ciudad }} <strong>- Estadio:</strong> {{ equipo.estadio }}</li>
+                <br>
+            {% endfor %}
+        </ul>
+        <p><a href="{% url 'inicio' %}">Volver al inicio</a></p> 
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Partidos</title>
+    </head>
+    <body>
+        <h1>Lista de Partidos</h1>
+        <ul>
+            {% for partido in lista_de_partidos %}
+                <li><strong>Partido:</strong>{{ partido.equipo_local.nombre }} <strong>vs</strong> {{ partido.equipo_visitante.nombre }} <strong>- Fecha:</strong> {{ partido.fecha }} <strong>- Estadio:</strong> {{ partido.estadio }}</li>
+                <br>
+            {% endfor %}
+        </ul>  
+        <p><a href="{% url 'inicio' %}">Volver al inicio</a></p> 
+    </body>
+</html>
