@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de protectoras</h1>
+    {% for protectora in lista_de_protectoras %}
+        <li>
+            <h2>{{ protectora.nombre }}</h2>
+            <p><strong>Descripción:</strong> {{ protectora.descripcion }}</p>
+            <p><time>Fecha de creación: {{ protectora.fecha_creacion }}</time></p>
+        </li>
+        <br>
+    {% endfor %}
+    <p>Pagina de Inicio<a href="{% url 'inicio' %}">Inicio</a></p>
+</body>
+</html>

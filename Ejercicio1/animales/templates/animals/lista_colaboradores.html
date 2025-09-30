@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de colaboradores</h1>
+    {% for colaborador in lista_de_colaboradores %}
+        <li>
+            <strong>{{ colaborador.nombre }}</strong> - ({{ colaborador.cargo }}) 
+            <p>Se unió el: {{ colaborador.fecha_entrada_protectora }}</p> 
+        </li>
+        <br>
+    {% endfor %}
+    <p>Pagina de Inicio<a href="{% url 'inicio' %}">Inicio</a></p>
+</body>
+</html>
