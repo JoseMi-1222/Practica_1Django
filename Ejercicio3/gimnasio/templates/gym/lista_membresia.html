@@ -7,6 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Lista de Membresia</h1>
+        <h1>Lista de membresías</h1>
+        <ul>
+            {% for membresia in lista_de_membresias %}
+                <li><strong>Tipo:</strong> {{ membresia.tipo }} <strong>- Precio:</strong> {{ membresia.precio }} <strong> - Inicio (mese):</strong> {{ membresia.fecha_inicio}}<strong> - Fin (mese):</strong> {{ membresia.fecha_fin}}</li>
+                <br>
+            {% endfor %}
+        </ul>
+        <p><a href="{% url 'inicio' %}">Volver al inicio</a></p>
     </body>
 </html>

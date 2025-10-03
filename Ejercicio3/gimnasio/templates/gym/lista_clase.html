@@ -7,6 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Lista de Clases</h1>
+        <h1>Lista de clases</h1>
+        <ul>
+            {% for clase in lista_de_clases %}
+                <li><strong>Nombre:</strong> {{ clase.nombre }} <strong>- Descripcion:</strong> {{ clase.descripcion }} <strong> - Horario:</strong> {{ clase.horario }}</li>
+                <br>
+            {% endfor %}
+        </ul>
+        <p><a href="{% url 'inicio' %}">Volver al inicio</a></p>
     </body>
 </html>

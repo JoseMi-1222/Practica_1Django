@@ -6,7 +6,7 @@
     "configurations": [
 
         {
-            "name": "Python: Django",
+            "name": "Python1: Django",
             "type": "debugpy",
             "request": "launch",
             "args": [
@@ -15,6 +15,30 @@
             "django": true,
             "autoStartBrowser": false,
             "program": "${workspaceFolder}/Ejercicio1/manage.py"
+        },
+
+        {
+            "name": "Python2: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}/Ejercicio2/manage.py"
+        }
+
+        {
+            "name": "Python3: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}/Ejercicio3/manage.py"
         }
     ]
 }

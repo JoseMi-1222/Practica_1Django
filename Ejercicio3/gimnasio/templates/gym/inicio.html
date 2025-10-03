@@ -7,6 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Inicio</h1>
+        <h1>Bienvenido al gimnasio</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'lista_clientes' %}">Lista de clientes</a></li>
+                <li><a href="{% url 'lista_membresias' %}">Lista de membresías</a></li>
+                <li><a href="{% url 'lista_clases' %}">Lista de clases</a></li>
+            </ul>
+        </nav>
     </body>
 </html>

@@ -8,12 +8,12 @@ def inicio(request):
 
 def lista_clientes(request):
     clientes = Cliente.objects.all()
-    return render(request, 'gym/lista_clientes.html', {'lista_de_clientes': clientes})
+    return render(request, 'gym/lista_cliente.html', {'lista_de_clientes': clientes})
 
 def lista_membresias(request):  
     membresias = Membresia.objects.all()
-    return render(request, 'gym/lista_membresias.html', {'lista_de_membresias': membresias})   
+    return render(request, 'gym/lista_membresia.html', {'lista_de_membresias': membresias})   
  
 def lista_clases(request):
     clases = Clase.objects.all()
-    return render(request, 'gym/lista_clases.html', {'lista_de_clases': clases})
+    return render(request, 'gym/lista_clase.html', {'lista_de_clases': clases})
